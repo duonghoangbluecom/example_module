@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <etg module="etg_master">
+            <label>Etg</label>
+            <sort_order>120</sort_order>
+            <class>etg-header</class>
+        </etg>
+    </tabs>
+    <sections>
+        <etgmaster translate="label" module="etg_master">
+            <class>etg-section</class>
+            <label>Etg Settings</label>
+            <header_css>etg-header</header_css>
+            <tab>etg</tab>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <commerce_connect translate="label">
+                    <label>Commerce Connect API Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <etg_commerce_connect_api_url translate="label">
+                            <label>Commerce Connect API URL</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <validate>required-entry</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </etg_commerce_connect_api_url>
+
+                        <etg_commerce_connect_api_token translate="label">
+                            <label>Commerce Connect API TOKEN</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <validate>required-entry</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </etg_commerce_connect_api_token>
+
+                        <etg_commerce_connect_api_email translate="label">
+                            <label>Commerce Connect API Email</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <validate>required-entry</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </etg_commerce_connect_api_email>
+
+                        <etg_commerce_connect_api_channel_id translate="label">
+                            <label>Commerce Connect API Chanel Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <validate>required-entry</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </etg_commerce_connect_api_channel_id>
+
+                    </fields>
+                </commerce_connect>
+            </groups>
+        </etgmaster>
+    </sections>
+</config>

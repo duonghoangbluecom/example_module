@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Etg_Master>
+            <version>0.1.0</version>
+        </Etg_Master>
+    </modules>
+    <global>
+        <models>
+            <etg_master>
+                <class>Etg_Master_Model</class>
+                <resourceModel>etg_master_resource</resourceModel>
+            </etg_master>
+            <etg_master_resource>
+                <class>Etg_Master_Model_Resource</class>
+            </etg_master_resource>
+        </models>
+        <helpers>
+            <etg_master>
+                <class>Etg_Master_Helper</class>
+            </etg_master>
+        </helpers>
+    </global>
+    <default>
+        <etgmaster>
+            <commerce_connect>
+                <etg_commerce_connect_api_url>https://channel.commerceconnect.co</etg_commerce_connect_api_url>
+                <etg_commerce_connect_api_token>sEkHssFZ7nj3dh8axHgi</etg_commerce_connect_api_token>
+                <etg_commerce_connect_api_email>palakdeep.bamrah@petbarn.com.au</etg_commerce_connect_api_email>
+                <etg_commerce_connect_api_channel_id>2</etg_commerce_connect_api_channel_id>
+            </commerce_connect>
+        </etgmaster>
+
+    </default>
+</config>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Etg_Order>
+            <version>0.1.0</version>
+        </Etg_Order>
+    </modules>
+    <global>
+        <models>
+            <loyalty>
+                <rewrite>
+                    <observer>Etg_Order_Model_Loyalty_Observer</observer>
+                </rewrite>
+            </loyalty>
+            <pay>
+                <rewrite>
+                    <observer>Etg_Order_Model_Observer</observer>
+                </rewrite>
+            </pay>
+        </models>
+        <helpers>
+            <etg_order>
+                <class>Etg_Order_Helper_Data</class>
+            </etg_order>
+        </helpers>
+        <resources>
+            <etg_order_setup>
+                <setup>
+                    <module>Etg_Order</module>
+                </setup>
+            </etg_order_setup>
+        </resources>
+    </global>
+</config>
